@@ -19,9 +19,7 @@ export const Navbar = () =>
     {
         const handleScroll = () =>
         {
-
             setIsScrolled(true)
-
         }
 
         window.addEventListener("scroll", handleScroll);

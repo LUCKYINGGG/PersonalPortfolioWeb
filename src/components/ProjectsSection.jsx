@@ -1,10 +1,10 @@
-import { ExternalLink, Github } from "lucide-react"
+import { ArrowRight, ExternalLink, Github } from "lucide-react"
 
 const projects = [
     {
         id: 1,
         title: "Project One",
-        description: "This is the first project.",
+        description: "This is the first project. This is the first project. This is the first project. This is the first project.",
         image: "/projects/picture1.jpg",
         tags: ["React", "TailWind", "JavaScript"],
         demoUrl: "#",
@@ -13,7 +13,7 @@ const projects = [
     {
         id: 2,
         title: "Project Two",
-        description: "This is the second project.",
+        description: "This is the second project. This is the second project. This is the second project.",
         image: "/projects/picture2.jpg",
         tags: ["C#", "Bootstrap", "SQL", "MudBlazor"],
         demoUrl: "#",
@@ -22,7 +22,7 @@ const projects = [
     {
         id: 2,
         title: "Project Two",
-        description: "This is the third project.",
+        description: "This is the third project. This is the third project. This is the third project. This is the third project. This is the third project.This is the third project.",
         image: "/projects/picture3.jpg",
         tags: ["Python", "Django", "Flask", "SQLite"],
         demoUrl: "#",
@@ -76,6 +76,12 @@ export const ProjectsSection = () =>
 
                 </div>
             )) }
+        </div>
+
+        <div className="tex-center mt-12">
+            <a href="https://github.com/LUCKYINGGG" target="_blank" className="cosmic-button w-fit flex items-center mx-auto gap-2">
+                Check My GitHub <ArrowRight size={ 16 } />
+            </a>
 
         </div>
 
