@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { Toast } from "radix-ui";
+import { Toaster } from "@/components/ui/toaster";
 
 function App()
 {
   return (
     <>
-      {/* <Toast /> */}
+      <Toaster />
       <BrowserRouter>
         <Routes>
           <Route index element={ <Home /> } />
