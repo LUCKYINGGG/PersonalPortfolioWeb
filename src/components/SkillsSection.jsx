@@ -26,6 +26,7 @@ const skills = [
     { name: "VS Code", level: 95, category: "tools" },
     { name: "Microsoft Azure", level: 70, category: "tools" },
     { name: "Power BI", level: 65, category: "tools" },
+    { name: "Vite", level: 60, category: "tools" },
 
 
 ]

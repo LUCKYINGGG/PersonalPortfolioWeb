@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+
 import { useEffect, useState } from "react";
 
 // id, size, x, y, speed, opacity, animationDUration
