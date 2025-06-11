@@ -3,30 +3,30 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react"
 const projects = [
     {
         id: 1,
-        title: "Project One",
+        title: "Personal Portfolio Website",
         description: "This is the first project. This is the first project. This is the first project. This is the first project.",
-        image: "/projects/picture1.jpg",
+        image: "/projects/meteorPortfolio.png",
         tags: ["React", "TailWind", "JavaScript"],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "https://personal-portfolio-web-silk.vercel.app/",
+        githubUrl: "https://github.com/LUCKYINGGG/PersonalPortfolioWeb"
     },
     {
         id: 2,
-        title: "Project Two",
-        description: "This is the second project. This is the second project. This is the second project.",
-        image: "/projects/picture2.jpg",
-        tags: ["C#", "Bootstrap", "SQL", "MudBlazor"],
+        title: "E-Bike Ecommerce Website",
+        description: "This website perform servicing features for customers. It allows customers to book a service, select parts and make service orders. It not yet deployed, but you can check the source code on GitHub.",
+        image: "/projects/Ebike.png",
+        tags: ["C#", "Entity Framework", "Blazor", "MudBlazor", "SQL"],
         demoUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://github.com/LUCKYINGGG/E-Bike-Ecommerce"
     },
     {
-        id: 2,
-        title: "Project Two",
-        description: "This is the third project. This is the third project. This is the third project. This is the third project. This is the third project.This is the third project.",
-        image: "/projects/picture3.jpg",
-        tags: ["Python", "Django", "Flask", "SQLite"],
-        demoUrl: "#",
-        githubUrl: "#"
+        id: 3,
+        title: "Simple Stactic Website",
+        description: "A static demo showcasing responsive web design and related techniques. Primarily use CSS and Bootstrap to deliver a polished and user-friendly interface",
+        image: "/projects/simpleWeb.png",
+        tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        demoUrl: "https://chimerical-twilight-229bfa.netlify.app/",
+        githubUrl: "https://github.com/LUCKYINGGG/NAIT-1530-Web-Design-Fundamentals-II-assignments/tree/main/assignment-4"
     }
 ]
 
