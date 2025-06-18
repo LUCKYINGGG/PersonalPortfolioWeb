@@ -67,7 +67,7 @@ export const ProjectsSection = () =>
                                 <a href={ project.demoUrl } target="_blank" className="text-fore-ground/80 hover:text-primary duration-300">
                                     <ExternalLink size={ 20 } />
                                 </a>
-                                <a href={ project.demoUrl } target="_blank" className="text-fore-ground/80 hover:text-primary duration-300">
+                                <a href={ project.githubUrl } target="_blank" className="text-fore-ground/80 hover:text-primary duration-300">
                                     <Github size={ 20 } />
                                 </a>
                             </div>
