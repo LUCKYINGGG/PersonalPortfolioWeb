@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 
 import { cn } from "@/lib/utils";
@@ -12,23 +12,38 @@ export const ContactSection = () =>
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-
-    const handleSubmit = (event) =>
+    const handleSubmit = async (event) =>
     {
         event.preventDefault();
         setIsSubmitting(true);
 
-        setTimeout(() =>
+        try
         {
+            await emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                event.target,                          // passes the form fields directly
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            );
+
             toast({
                 title: "Message Sent!",
                 description: "Thank you for reaching out! I'll get back to you as soon as possible.",
-            })
+            });
+
+            event.target.reset();
+        } catch (error)
+        {
+            toast({
+                title: "Something went wrong.",
+                description: "Please try again or email me directly.",
+                variant: "destructive",
+            });
+        } finally
+        {
             setIsSubmitting(false);
-        }, 1500)
-
-
-    }
+        }
+    };
 
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -102,7 +117,7 @@ export const ContactSection = () =>
                                 <input
                                     type="text"
                                     id="name"
-                                    name="name"
+                                    name="from_name"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" placeholder="John Smith ..." ></input>
                             </div>
@@ -112,7 +127,7 @@ export const ContactSection = () =>
                                 <input
                                     type="email"
                                     id="email"
-                                    name="email"
+                                    name="from_email"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" placeholder="example@gmail.com" ></input>
                             </div>
@@ -122,7 +137,7 @@ export const ContactSection = () =>
                                 <textarea
 
                                     id="message"
-                                    name="name"
+                                    name="message"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-textarea bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none" placeholder="Hi, I'd like to talk about ..." ></textarea>
                             </div>
