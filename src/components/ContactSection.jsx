@@ -119,7 +119,7 @@ export const ContactSection = () =>
                                 <input
                                     type="text"
                                     id="name"
-                                    name="name"
+                                    name="from_name"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" placeholder="John Smith ..." ></input>
                             </div>
@@ -129,7 +129,7 @@ export const ContactSection = () =>
                                 <input
                                     type="email"
                                     id="email"
-                                    name="email"
+                                    name="from_email"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" placeholder="example@gmail.com" ></input>
                             </div>
