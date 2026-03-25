@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 
 import { cn } from "@/lib/utils";
@@ -35,6 +35,7 @@ export const ContactSection = () =>
             event.target.reset();
         } catch (error)
         {
+            console.error("EmailJS error:", error);
             toast({
                 title: "Something went wrong.",
                 description: "Please try again or email me directly.",
@@ -139,7 +140,7 @@ export const ContactSection = () =>
                                 <textarea
 
                                     id="message"
-                                    name="name"
+                                    name="message"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-textarea bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none" placeholder="Hi, I'd like to talk about ..." ></textarea>
                             </div>
