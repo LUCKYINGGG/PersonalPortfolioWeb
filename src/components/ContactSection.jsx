@@ -25,6 +25,9 @@ export const ContactSection = () =>
                 event.target,                          // passes the form fields directly
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             );
+            console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+            console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+            console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
             toast({
                 title: "Message Sent!",
