@@ -12,7 +12,7 @@ export const HeroSection = () =>
                         <span className="text-primary opacity-0 animate-fade-in-delay-1">Ying { " " }</span>
                         <span className="text-gradient opacity-0 animate-fade-in-delay-2">Tao</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto opacity-0 animate-fade-in-delay-3">
                         I'm a software developer and a graduate student in Electrical and Computer Engineering at the University of Calgary, specializing in C#, C++, Python, JavaScript, and more. I love building real-world applications, learning new technologies, and creating clean, user-focused solutions. Currently seeking opportunities to grow, collaborate, and make a meaningful impact through code.
                     </p>
                     <div className="opacity-0 animate-fade-in-delay-4 pt-4">
