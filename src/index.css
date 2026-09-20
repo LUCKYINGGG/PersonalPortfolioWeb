@@ -107,6 +107,8 @@
 
     --input: 215 32% 58%;
     --ring: 250 47% 60%;
+
+    --gradient-to: 285 55% 52%;
   }
 
   .dark {
@@ -132,6 +134,8 @@
 
     --input: 217 33% 42%;
     --ring: 250 65% 65%;
+
+    --gradient-to: 285 70% 78%;
   }
 
   * {
@@ -174,6 +178,18 @@
 @utility text-glow {
   @apply relative;
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility text-gradient {
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--primary)),
+    hsl(var(--gradient-to))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @utility card-hover {

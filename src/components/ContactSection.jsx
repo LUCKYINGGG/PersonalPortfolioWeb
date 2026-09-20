@@ -95,7 +95,7 @@ export const ContactSection = () =>
                                 <div className="grid justify-items-start">
                                     <h4 className="font-medium">Location</h4>
                                     <a className="text-muted-foreground hover:text-primary transition-colors">
-                                        Edmonton, Alberta, Canada
+                                        Calgary, Alberta, Canada
                                     </a>
                                 </div>
                             </div>
